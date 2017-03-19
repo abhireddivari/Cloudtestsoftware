@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cloudetest Software</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+  <style>
+.navbar-inverse .navbar-brand {
+   
+    color: #fff;
+    font-size:22px;
+    
+}
+.navbar-inverse
+{
+border-color: #00BCD4;
+}
+.navbar-inverse {
+    background-color: #00BCD4;
+    box-shadow: 0 3px 3px rgba(0,0,0,.29);
+    
+    /* border-color: #080808; */
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+.panel { box-shadow: 2px 2px 5px rgba(0,0,0,.1); border-radius: 0; cursor: pointer; border: 1px solid #dedede; }
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #00BCD4;
+    border-color: none;
+    color:#fff;
+    text-align:center;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.panel-body
+{
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+}
+.card-panel {
+    transition: box-shadow .25s;
+    padding: 24px;
+    margin: .5rem 0 1rem 0;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+   border-left: 10px solid #CDDC39;
+}
+img.responsive-img, video.responsive-video {
+    max-width: 100%;
+    height: auto;
+}
+.circle {
+    border-radius: 50%;
+}
+img.responsive-img, video.responsive-video {
+    max-width: 100%;
+    height: auto;
+    width:60px;
+    background-color:#fafafa
+}
+
+ .navbar-inverse .navbar-nav>li>a:hover {
+            background-color: rgba(63, 81, 181, 0.63);
+        }
+panel-heading {
+    padding: 10px 15px;
+    border-bottom: 0px solid transparent; 
+     border-top-left-radius: 0px; 
+     border-top-right-radius: 0px; 
+}
+.portfolio
+{
+    box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+    background-color: #fff;
+}
+.img-portfolio
+{
+ margin: 0px;
+ padding:10px;
+}
+
+.iconImage
+{
+    display: block;text-align: center;margin: 0 auto;
+}
+
+.panelFooter
+{
+    background-color: #607D8B;
+    padding: 10px;
+    box-shadow: 2px 2px 2px #888888;
+}
+  .circle1 {
+            width: 9px;
+            height: 9px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 20px;
+            background-color: #AED581;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .circle2 {
+            width: 9px;
+            height: 9px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 20px;
+            background-color: #FFF176;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .circle3 {
+            width: 9px;
+            height: 9px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 20px;
+            background-color: #f3b49f;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .circle4 {
+            width: 9px;
+            height: 9px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 20px;
+            background-color: #80DEEA;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .circle5 {
+            width: 9px;
+            height: 9px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 20px;
+            background-color: #8BC34A;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .mini-timeline:before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            bottom: 0;
+            width: 2px;
+            background: #eeeeee;
+            left: 8px;
+        }
+
+        .mini-timeline {
+            padding-left: 0;
+            list-style: none;
+            position: relative;
+            margin-left: 7%;
+        }
+        .mini-timeline > li {
+    position: relative;
+}
+        li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+        .mini-timeline-lime .timeline-icon {
+    border: 2px solid #cddc39 !important;
+}
+
+        .mini-timeline > li .timeline-body {
+    margin: 0 0px 20px 32px;
+    padding: 0;
+    position: relative;
+    background-color: #fff;
+}
+
+
+        .mini-timeline > li .timeline-icon {
+    position: absolute;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    margin: 0;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+}
+
+        .mini-timeline-deeporange .timeline-icon {
+    border: 2px solid #ff5722 !important;
+}
+
+        .mini-timeline-info .timeline-icon {
+    border: 2px solid #00bcd4 !important;
+}
+
+        .mini-timeline-indigo .timeline-icon {
+    border: 2px solid #3f51b5 !important;
+}
+
+        li{
+            list-style: none;
+        }
+
+
+.modal-content
+{
+    border-radius:none;
+}
+ body{
+       background:rgba(238, 238, 238, 0.63);
+       font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   }
+  </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">  Cloud Test Software</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="About.html">About</a>
+                    </li>
+                    <li>
+                        <a href="Product.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                     <li>
+                        <a href="Blog.html">Blog</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('../Cloudtestsoftware/img/cts1.PNG');"></div>
+                <div class="carousel-caption">
+                    <h2>Delivers Quality Product</h2>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="fill" style="background-image:url('../Cloudtestsoftware/img/cts3.PNG');"></div>
+                <div class="carousel-caption">
+                    <h2>Plans and execution</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('../Cloudtestsoftware/img/cts4.PNG');"></div>
+                <div class="carousel-caption">
+                    <h2>Assurance of Quality</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('../Cloudtestsoftware/img/cts5.PNG');"></div>
+                <div class="carousel-caption">
+                    <h2>Believe in Quality</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('../Cloudtestsoftware/img/cts6.PNG');"></div>
+                <div class="carousel-caption">
+                    <h2>Delivers with in Time line</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('../Cloudtestsoftware/img/cts7.PNG');"></div>
+                <div class="carousel-caption">
+                    <h2>Follows proper process</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('../Cloudtestsoftware/img/cts8.PNG');"></div>
+                <div class="carousel-caption">
+                    <h2>Product test automation</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+<div class="card-panel grey lighten-5 z-depth-1" style="margin-top:1%;">
+            <div class="row valign-wrapper">
+                <div class="col-lg-1">
+                    
+                     <img src="../Cloudtestsoftware/img/profilePic.png" class="circle responsive-img"></span>
+                    <!-- notice the "circle" class -->
+                </div>
+                <div class="col-lg-11">
+              
+                    <span>
+                          Software Automation questions
+Use Cloud Test Software project & test management solution FREE. Create rapid automation test script and run with CI /CD instantly!                       
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+               
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color:#1BBC9B">
+                        <h4><i class="fa fa-fw fa-check"></i> Automation As Service</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>At CloudTestSoftware, we are very serious about your automation testing need. We are not selling a simple tool or hourly resource. We take complete ownership and responsibility to build your automation tests by providing 5 core services.</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color:#03A9F4">
+                        <h4><i class="fa fa-fw fa-gift"></i> Framework As Service</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>You might have been doing automation using your own homegrown framework with open source tools like Selenium, Junit, TestNg, other.  You might be looking a solution to integrate program, sprint,  time, cloud , projects and environments.</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color:#EE6E73">
+                        <h4><i class="fa fa-fw fa-compass"></i> Script As Service</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>If you are not looking for Turnkey automation solution platform or you like to keep on using your homegrown automation framework but you still need some help to build few automated tests quickly  scenarios in your current sprin</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header" style="color:#607D8B">Operations</h2>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                <div class="portfolio">
+                <a href="portfolio-item.html" data-toggle="modal" data-target="#myModal"> 
+                    <img class="img-responsive img-portfolio img-hover iconImage" src="../Cloudtestsoftware/img/plugin.png" alt="">
+                </a>
+                </div>
+                <div class="panelFooter">
+               <span style="font-size: 16px;font-weight: 100;color:#fff">Easy Plugin To Run Homegrown Automation Framework </span>
+                </div>
+                
+            </div>
+           
+             <div class="col-md-4 col-sm-6">
+                <div class="portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover iconImage" src="../Cloudtestsoftware/img/script.png" alt="">
+                </a>
+                <div class="panelFooter">
+               <span style="font-size: 16px;font-weight: 100;color:#fff">Test REST API faster and generate test script with REST Assured. </span>
+                </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover iconImage" src="../Cloudtestsoftware/img/disc.png" alt="">
+                </a>
+                <div class="panelFooter">
+               <span style="font-size: 16px;font-weight: 100;color:#fff">Use On-demand CI /CD With Program, Sprint, Defect, Time, Task, Analytics & Cloud. </span>
+                </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6" style="margin-top: 2%;">
+                <div class="portfolio">
+                <a href="portfolio-item.html">
+                   <img class="img-responsive img-portfolio img-hover iconImage" src="../Cloudtestsoftware/img/main.png" alt="">
+                </a>
+                <div class="panelFooter">
+               <span style="font-size: 16px;font-weight: 100;color:#fff">Save 50% Cost In Script And Maintenance Of Homegrown Framework.</span>
+                </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6" style="margin-top: 2%;">
+                <div class="portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover iconImage" src="../Cloudtestsoftware/img/report.png" alt="">
+                </a>
+                <div class="panelFooter">
+               <span style="font-size: 16px;font-weight: 100;color:#fff">Supported  Recording Tools Selenium Builder, Selenium IDE & CTestOne. </span>
+                </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6" style="margin-top: 2%;">
+                <div class="portfolio">
+                <a href="portfolio-item.html">
+                     <img class="img-responsive img-portfolio img-hover iconImage" src="../Cloudtestsoftware/img/responsive.png" alt="">
+                </a>
+                <div class="panelFooter">
+               <span style="font-size: 16px;font-weight: 100;color:#fff">Build rapid test automation for browser & mobile with web service,TestNg and more ... </span>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- /.row -->
+
+        <!-- Features Section -->
+        <div class="row" >
+            <div class="col-lg-12">
+                <h2 class="page-header">What We Do...</h2>
+            </div>
+            <div style="background-color:#fff !important;display:inline-block;padding:20px;box-shadow: 2px 2px 5px rgba(0,0,0,.1);border-left:5px solid #607D8B"> 
+            <div class="col-md-6" >
+                <p>Our team does the best and delivers good quality products:</p>
+               <ul class="mini-timeline">
+							<li   class="mini-timeline-lime">
+								<div class="timeline-icon"></div>
+								<div class="timeline-body">
+									<div  class="timeline-content">
+										
+On-Deamnd automation testing is in high demand in current software industries. Most of the small and mid size companies finding limited resource and budget to automate thier software in time and to maintain scripts for longer period of time. 
+									</div>
+								</div>
+							</li>
+                             <li   class="mini-timeline-deeporange">
+								<div class="timeline-icon"></div>
+								<div class="timeline-body">
+									<div  class="timeline-content">
+									
+​
+A recent survey revealed that 46% of software developers do not perform thorough testing due to lack of time and 36% do not believe that their companies perform enough prerelease testing. 
+									</div>
+								</div>
+							</li>
+                             <li   class="mini-timeline-info">
+								<div class="timeline-icon"></div>
+								<div class="timeline-body">
+									<div  class="timeline-content">
+										
+ Many of the QA folks are shared resources working between multiple product groups, projects or releases. In that case dedicated resource for release validation for system testing could be another approach.
+									</div>
+								</div>
+							</li>
+                              <li   class="mini-timeline-indigo">
+								<div class="timeline-icon"></div>
+								<div class="timeline-body">
+									<div  class="timeline-content">
+										It is almost certain that maintenance cost for automated tests are very high when product user interfaces change very rapidly. 
+									</div>
+								</div>
+							</li>
+                             <li   class="mini-timeline-deeporange">
+								<div class="timeline-icon"></div>
+								<div class="timeline-body">
+									<div  class="timeline-content">
+										CloudTestSoftware is a unique cloud based automation and DevOps platform comes with a premium software solution for a complete SDLC process, test automation & DevOps within a single cloud application with premium supports and services.
+									</div>
+								</div>
+							</li>
+
+                             </ul>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="../Cloudtestsoftware/img/cts9.png" alt="" >
+            </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+        </div>
+       <!-- Footer -->
+        <footer>
+            <div class="container-fluid" style="padding:20px;background-color:#607D8B;color:#fff">
+                <div class="col-lg-12">
+                 <p> © 2015 by  Artitelly Solutions , Inc </p>
+                <p>info@CloudTestSoftware.com |  Tel: 1-650-823-2300</p>
+                </div>
+            </div>
+        </footer>
+
+    
+  <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg" style="width:1100px" >
+
+    <!-- Modal content-->
+    <div class="modal-content" style="border-radius:0px">
+        
+      <div class="modal-header" style="border-bottom:none">
+          
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <img src="../Cloudtestsoftware/img/plugin.png" /><span class="modal-title" style="padding-left:20px;font-size:20px;color: #607D8B;">Frame Work as a Service</span>
+      </div>
+
+      <div class="modal-body">
+          <div class="row">
+        <div class="col-lg-9">
+            <div style="padding-left:10px;text-align:left;border-left:5px solid rgba(255, 99, 71, 0.68)"> 
+        <p>
+            You might have been doing automation using your own homegrown framework with open source tools like Selenium, Junit, TestNg, Python or other.  You might be looking a solution to integrate program, sprint, defect, task, test, time, cloud and want to build analytics with complete traceability to test execution results across multiple projects and environments. Also you might be looking to build CI & CD infrastructure such that your tests can scale and run faster with highest reliability and can produce consolidated reports with facts, graphs, issues and data.
+         </p>   
+         </div>
+          <div style="padding-left:10px;text-align:left;border-left:5px solid rgba(0, 150, 136, 0.65)"> 
+         <p>
+CloudTestSoftware can provide you all support infrastructures, monitoring tools, building cloud with CI and CD, reporting and analytics sync with your test management repository and project management tool. You can use your home grown frameworks irrespective of any programming scripting language you used to write your test scripts and just by creating a plugin with simple XML configuration using CloudTestSoftware platform, you immediately can execute your tests with private, public or hybrid cloud within your firewall.
+         </p>
+          </div>
+           <div style="padding-left:10px;text-align:left;border-left:5px solid rgba(255, 193, 7, 0.79)"> 
+         <p>
+        Using CloudTestSoftware, you can save your cost of in house building and maintaining these supporting infrastructures which are almost 60%-70% of the cost for creating, maintaining, upgrading, licensing and managing of multiple tools and applications together.
+         </p>
+  </div>
+        </div>
+        
+        <div class="col-lg-3">
+        
+        <div style="box-shadow: 2px 2px 5px rgba(0,0,0,.1);">
+        <img src="../Cloudtestsoftware/img/framework_as_a_service1.png" style="width:100%"/>
+       </div>
+       <div style="padding:10px;background-color:rgba(0, 150, 136, 0.69);box-shadow:2px 2px 3px #888888;text-align:center;color:#fff">
+            
+            <a style="color:#fff;font-weight:bold;font-size:20px;"> Contact Us </a>
+            
+           </div>
+
+        </div>
+         </div>
+      </div>
+  
+
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        //interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
