@@ -1,7 +1,7 @@
 # Cloudtestsoftware
 The most popular HTML, CSS, and JavaScript framework for developing responsive projects on the web.
 
-https://github.com/abhireddivari/Cloudtestsoftware
+https://abhireddivari.github.io/Cloudtestsoftware/Cloudtestsoftware/
 
 
 How to use:
